@@ -29,87 +29,10 @@ body {
   opacity: 0.6;
 }
 /* MY CUSTOM STYLING */
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt,
+em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu,
+nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt,
+u, ul, var, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -118,17 +41,7 @@ video {
   vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -160,25 +73,7 @@ table {
 }
 /*-------NEW CSS CODE STARTS HERE------*/
 /*------- REPEAT _ SETTING -------*/
-.bmwlogo,
-.bmwmotto,
-.box1,
-.box2,
-.box3,
-.footerdiv,
-.headdiv,
-.headerimage,
-.innerleft,
-.linkdiv1,
-.linkdiv2,
-.linkdiv3,
-.links,
-.median,
-.models,
-.modeltext1,
-.nav1,
-.nav2,
-.submedian,
+.bmwlogo, .bmwmotto, .box1, .box2, .box3, .footerdiv, .headdiv, .headerimage, .innerleft, .linkdiv1, .linkdiv2, .linkdiv3, .links, .median, .models, .modeltext1, .nav1, .nav2, .submedian,
 body {
   margin: auto;
 }
@@ -187,7 +82,7 @@ body {
 .nav1 a {
   text-decoration: none;
   color: white;
-  font-family: arial;
+  font-family: $font-base;
 }
 
 a {
@@ -204,8 +99,7 @@ li,
 p {
   font-family: arial;
 }
-
-$primary-color: white;
+$primary-color: #ffffff;
 $image1: BMW Logo.png;
 $image2: 8 Series.jpg;
 $image3: BMW 2 Series Coupe.png;
@@ -213,7 +107,7 @@ $image4: BMW M240i Coupe.png;
 $image5: BMW 2 Series Cabriolet.png;
 $image6: BMW M240i Cabriolet.png;
 $image7: BMW M2.png;
-
+$font-base: arial;
 /*------- END _ REPEAT _ SETTING -------*/
 /*------- HEADER -------*/
 body {
@@ -224,6 +118,7 @@ body {
   background-color: gray;
   height: 255px;
 }
+
 .box2 {
   background-color: dodgerblue;
   height: 65px;
@@ -698,23 +593,23 @@ body {
 }
 
 .itempreviewpic1 {
-  background-image: url("../../IMG/BMW%202%20Series%20Coupe.png");
+  background-image: url($image1);
 }
 
 .itempreviewpic2 {
-  background-image: url("../../IMG/BMW%202%20Series%20M240i.png");
+  background-image: url($image2);
 }
 
 .itempreviewpic3 {
-  background-image: url("../../IMG/BMW%202%20Series%20Cabrio.png");
+  background-image: url($image3);
 }
 
 .itempreviewpic4 {
-  background-image: url("../../IMG/BMW%202%20Series%20Cabrio%202.png");
+  background-image: url($image4);
 }
 
 .itempreviewpic5 {
-  background-image: url("../../IMG/BMW%20M2.png");
+  background-image: url($image5);
 }
 /*------- END PRODUCT PAGES -------*/
 /*------- FOOTER -------*/
@@ -787,7 +682,7 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     margin-top: 50px;
-    color:     color: $primary-color;
+    color:color: $primary-color;
     font-family: arial;
     font-size: 15px;
     font-weight: bold;
@@ -1066,31 +961,31 @@ body {
   }
 
   .itemimage1 {
-    background-image: url("../../IMG/BMW%202%20Series%20Coupe.png");
+    background-image: url($image3);
     background-size: 190px;
     background-repeat: no-repeat;
   }
 
   .itemimage2 {
-    background-image: url("../../IMG/BMW%202%20Series%20M240i.png");
+    background-image: url($image4);
     background-size: 190px;
     background-repeat: no-repeat;
   }
 
   .itemimage3 {
-    background-image: url("../../IMG/BMW%202%20Series%20Cabrio.png");
+    background-image: url($image5;
     background-size: 190px;
     background-repeat: no-repeat;
   }
 
   .itemimage4 {
-    background-image: url("../../IMG/BMW%202%20Series%20Cabrio%202.png");
+    background-image: url($image6;
     background-size: 190px;
     background-repeat: no-repeat;
   }
 
   .itemimage5 {
-    background-image: url("../../IMG/BMW%20M2.png");
+    background-image: url($image7);
     background-size: 190px;
     background-repeat: no-repeat;
   }
@@ -1352,31 +1247,31 @@ body {
   }
 
   .itemimage1 {
-    background-image: url("../../IMG/BMW%202%20Series%20Coupe.png");
+    background-image: url($image3);
     background-size: 270px;
     background-repeat: no-repeat;
   }
 
   .itemimage2 {
-    background-image: url("../../IMG/BMW%202%20Series%20M240i.png");
+    background-image: url($image4);
     background-size: 270px;
     background-repeat: no-repeat;
   }
 
   .itemimage3 {
-    background-image: url("../../IMG/BMW%202%20Series%20Cabrio.png");
+    background-image: url($image5);
     background-size: 270px;
     background-repeat: no-repeat;
   }
 
   .itemimage4 {
-    background-image: url("../../IMG/BMW%202%20Series%20Cabrio%202.png");
+    background-image: url($image6);
     background-size: 270px;
     background-repeat: no-repeat;
   }
 
   .itemimage5 {
-    background-image: url("../../IMG/BMW%20M2.png");
+    background-image: url($image7);
     background-size: 270px;
     background-repeat: no-repeat;
   }
