@@ -204,6 +204,16 @@ li,
 p {
   font-family: arial;
 }
+
+$primary-color: white;
+$image1: BMW Logo.png;
+$image2: 8 Series.jpg;
+$image3: BMW 2 Series Coupe.png;
+$image4: BMW M240i Coupe.png;
+$image5: BMW 2 Series Cabriolet.png;
+$image6: BMW M240i Cabriolet.png;
+$image7: BMW M2.png;
+
 /*------- END _ REPEAT _ SETTING -------*/
 /*------- HEADER -------*/
 body {
@@ -214,7 +224,6 @@ body {
   background-color: gray;
   height: 255px;
 }
-
 .box2 {
   background-color: dodgerblue;
   height: 65px;
@@ -224,14 +233,14 @@ body {
   width: 120px;
   height: 130px;
   border: 2px solid gray;
-  background-color: white;
+  background-color: $primary-color;
   margin-top: -290px;
 }
 
 .bmwlogo {
   width: 70%;
   height: 70%;
-  background-image: url("../../IMG/BMW Logo.png");
+  background-image: url($image1);
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 8px;
@@ -259,7 +268,7 @@ body {
 .search {
   display: inline-block;
   padding-left: 15px;
-  color: white;
+  color: $primary-color;
   font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
@@ -273,7 +282,7 @@ body {
   display: inline-block;
   padding-left: 15px;
   margin-top: 10px;
-  color: white;
+  color: $primary-color;
   font-size: 18px;
   font-weight: bold;
 }
@@ -281,7 +290,7 @@ body {
 /*------- INDEX CONTENT -------*/
 .headerimage {
   height: 200px;
-  background-image: url("../../IMG/8%20Series.jpg");
+  background-image: url($image2);
   margin-top: 155px;
   z-index: -1;
   position: relative;
@@ -316,13 +325,13 @@ body {
 .headtitle {
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: $primary-color;
   padding-top: 9px;
 }
 
 .headdes {
   font-weight: bold;
-  color: white;
+  color: $primary-color;
   padding-top: 5px;
   width: 140px;
 }
@@ -337,7 +346,7 @@ body {
 .findmore {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: $primary-color;
   padding: 25px;
   text-align: center;
 }
@@ -391,13 +400,13 @@ body {
 
 .modelname {
   font-size: 20px;
-  color: white;
+  color: $primary-color;
   font-weight: bold;
 }
 
 .modelseries {
   font-size: 20px;
-  color: white;
+  color: $primary-color;
   font-weight: bold;
 }
 
@@ -419,7 +428,7 @@ body {
 .modelnumber2,
 .modelnumber3 {
   font-size: 80px;
-  color: white;
+  color: $primary-color;
   font-weight: bold;
 }
 
@@ -608,31 +617,31 @@ body {
 }
 
 .itemimage1 {
-  background-image: url("../../IMG/BMW%202%20Series%20Coupe.png");
+  background-image: url($image3);
   background-size: 210px;
   background-repeat: no-repeat;
 }
 
 .itemimage2 {
-  background-image: url("../../IMG/BMW%202%20Series%20M240i.png");
+  background-image: url($image4);
   background-size: 210px;
   background-repeat: no-repeat;
 }
 
 .itemimage3 {
-  background-image: url("../../IMG/BMW%202%20Series%20Cabrio.png");
+  background-image: url($image5);
   background-size: 210px;
   background-repeat: no-repeat;
 }
 
 .itemimage4 {
-  background-image: url("../../IMG/BMW%202%20Series%20Cabrio%202.png");
+  background-image: url($image6);
   background-size: 210px;
   background-repeat: no-repeat;
 }
 
 .itemimage5 {
-  background-image: url("../../IMG/BMW%20M2.png");
+  background-image: url($image7);
   background-size: 210px;
   background-repeat: no-repeat;
 }
@@ -778,7 +787,7 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     margin-top: 50px;
-    color: white;
+    color:     color: $primary-color;
     font-family: arial;
     font-size: 15px;
     font-weight: bold;
